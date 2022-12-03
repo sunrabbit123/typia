@@ -9,8 +9,8 @@ import { CreateCloneTransformer } from "./features/cloners/CreateCloneTransforme
 import { CreateIsCloneTransformer } from "./features/cloners/CreateIsCloneTransformer";
 import { IsCloneTransformer } from "./features/cloners/IsCloneTransformer";
 import { ApplicationTransformer } from "./features/miscellaneous/ApplicationTransformer";
-import { CreateInstanceTransformer } from "./features/miscellaneous/CreateInstanceTransformer";
 import { MetadataTransformer } from "./features/miscellaneous/MetadataTransformer";
+import { ParseTransformer } from "./features/miscellaneous/ParseTransformer";
 import { MessageTransformer } from "./features/protocols/MessageTransformer";
 import { AssertStringifyTransformer } from "./features/stringifiers/AssertStringifyTransformer";
 import { CreateAssertStringifyTransformer } from "./features/stringifiers/CreateAssertStringifyTransformer";
@@ -83,7 +83,9 @@ const FUNCTORS: Record<string, () => Task> = {
     // PROTOCOL BUFFER FUNCTIONS
     message: () => MessageTransformer.transform,
 
-    // STRINGIFY FUNCTIONS
+    // JSON FUNCTIONS
+    application: () => ApplicationTransformer.transform,
+    parse: () => ParseTransformer.transform,
     stringify: () => StringifyTransformer.transform,
     assertStringify: () => AssertStringifyTransformer.transform,
     isStringify: () => IsStringifyTransformer.transform,
@@ -92,9 +94,6 @@ const FUNCTORS: Record<string, () => Task> = {
     clone: () => CloneTransformer.transform,
     isClone: () => IsCloneTransformer.transform,
     assertClone: () => AssertCloneTransformer.transform,
-
-    // MISC
-    application: () => ApplicationTransformer.transform,
 
     //----
     // FACTORY FUNCTIONS
@@ -121,6 +120,5 @@ const FUNCTORS: Record<string, () => Task> = {
     createAssertClone: () => CreateAssertCloneTransformer.transform,
 
     // MISC
-    createObject: () => CreateInstanceTransformer.transform,
     metadata: () => MetadataTransformer.transform,
 };

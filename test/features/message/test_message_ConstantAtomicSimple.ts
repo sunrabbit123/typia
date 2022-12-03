@@ -8,7 +8,7 @@ export const test_message_ConstantAtomicSimple = _test_message(
     `syntax = \"proto3\";
 
 message __Main {
-    [false, true, 2, \"three\"] value = 1;
+    _alt_false_comma__space_true_comma__space_2_comma__space__doublequote_three_doublequote__agt_ value = 1;
 }
 
 message _alt_false_comma__space_true_comma__space_2_comma__space__doublequote_three_doublequote__agt_ {

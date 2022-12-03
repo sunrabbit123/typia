@@ -8,7 +8,7 @@ export const test_message_TupleHierarchical = _test_message(
     `syntax = \"proto3\";
 
 message __Main {
-    [boolean, undefined, number, [boolean, null, [number, [boolean, string]]], [number, Array<[string, boolean, Array<[number, number, [boolean, string]]>]>]] value = 1;
+    _alt_boolean_comma__space_undefined_comma__space_number_comma__space__alt_boolean_comma__space_null_comma__space__alt_number_comma__space__alt_boolean_comma__space_string_agt__agt__agt__comma__space__alt_number_comma__space_Array_lt__alt_string_comma__space_boolean_comma__space_Array_lt__alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt__gt__agt__gt__agt__agt_ value = 1;
 }
 
 message _alt_boolean_comma__space_undefined_comma__space_number_comma__space__alt_boolean_comma__space_null_comma__space__alt_number_comma__space__alt_boolean_comma__space_string_agt__agt__agt__comma__space__alt_number_comma__space_Array_lt__alt_string_comma__space_boolean_comma__space_Array_lt__alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt__gt__agt__gt__agt__agt_ {
@@ -17,8 +17,8 @@ message _alt_boolean_comma__space_undefined_comma__space_number_comma__space__al
 
     }
     double v2 = 2;
-    [boolean, null, [number, [boolean, string]]] v3 = 3;
-    [number, Array<[string, boolean, Array<[number, number, [boolean, string]]>]>] v4 = 4;
+    _alt_boolean_comma__space_null_comma__space__alt_number_comma__space__alt_boolean_comma__space_string_agt__agt__agt_ v3 = 3;
+    _alt_number_comma__space_Array_lt__alt_string_comma__space_boolean_comma__space_Array_lt__alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt__gt__agt__gt__agt_ v4 = 4;
 }
 
 message _alt_boolean_comma__space_null_comma__space__alt_number_comma__space__alt_boolean_comma__space_string_agt__agt__agt_ {
@@ -26,12 +26,12 @@ message _alt_boolean_comma__space_null_comma__space__alt_number_comma__space__al
     oneof v1 {
 
     }
-    [number, [boolean, string]] v2 = 2;
+    _alt_number_comma__space__alt_boolean_comma__space_string_agt__agt_ v2 = 2;
 }
 
 message _alt_number_comma__space__alt_boolean_comma__space_string_agt__agt_ {
     double v0 = 1;
-    [boolean, string] v1 = 2;
+    _alt_boolean_comma__space_string_agt_ v1 = 2;
 }
 
 message _alt_boolean_comma__space_string_agt_ {
@@ -46,11 +46,11 @@ message _alt_number_comma__space_Array_lt__alt_string_comma__space_boolean_comma
 
 message Array {
     message Element_lt__alt_string_comma__space_boolean_comma__space_Array_lt__alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt__gt__agt__gt_ {
-        [string, boolean, Array<[number, number, [boolean, string]]>] value = 1;
+        _alt_string_comma__space_boolean_comma__space_Array_lt__alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt__gt__agt_ value = 1;
     }
 
     message Element_lt__alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt__gt_ {
-        [number, number, [boolean, string]] value = 1;
+        _alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt_ value = 1;
     }
 }
 
@@ -63,6 +63,6 @@ message _alt_string_comma__space_boolean_comma__space_Array_lt__alt_number_comma
 message _alt_number_comma__space_number_comma__space__alt_boolean_comma__space_string_agt__agt_ {
     double v0 = 1;
     double v1 = 2;
-    [boolean, string] v2 = 3;
+    _alt_boolean_comma__space_string_agt_ v2 = 3;
 }`,
 );

@@ -8,7 +8,7 @@ export const test_message_DynamicArray = _test_message(
     `syntax = \"proto3\";
 
 message __Main {
-    map<string, Object.Value_lt_Array_lt_string_gt__gt_> value = 1;
+    map_lt_string_comma__space_Object.Value_lt_Array_lt_string_gt__gt__gt_ value = 1;
 }
 
 message Object {

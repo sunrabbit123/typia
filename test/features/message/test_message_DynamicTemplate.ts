@@ -9,9 +9,9 @@ export const test_message_DynamicTemplate = _test_message(
 
 message __Main {
     oneof value {
-        map<string, string> o0 = 1;
-        map<string, number> o1 = 2;
-        map<string, boolean> o2 = 3;
+        map_lt_string_comma__space_string_gt_ o0 = 1;
+        map_lt_string_comma__space_number_gt_ o1 = 2;
+        map_lt_string_comma__space_boolean_gt_ o2 = 3;
     }
 }`,
 );

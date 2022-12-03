@@ -8,7 +8,7 @@ export const test_message_AtomicAlias = _test_message(
     `syntax = \"proto3\";
 
 message __Main {
-    [boolean, number, string] value = 1;
+    _alt_boolean_comma__space_number_comma__space_string_agt_ value = 1;
 }
 
 message _alt_boolean_comma__space_number_comma__space_string_agt_ {

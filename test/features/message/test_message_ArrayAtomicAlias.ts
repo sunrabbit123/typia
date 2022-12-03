@@ -8,7 +8,7 @@ export const test_message_ArrayAtomicAlias = _test_message(
     `syntax = \"proto3\";
 
 message __Main {
-    [Array<boolean>, Array<number>, Array<string>] value = 1;
+    _alt_Array_lt_boolean_gt__comma__space_Array_lt_number_gt__comma__space_Array_lt_string_gt__agt_ value = 1;
 }
 
 message _alt_Array_lt_boolean_gt__comma__space_Array_lt_number_gt__comma__space_Array_lt_string_gt__agt_ {

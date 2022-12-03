@@ -94,7 +94,7 @@ export const test_application_swagger_ObjectJsonTag = _test_application(
                                 name: "title",
                                 text: [
                                     {
-                                        text: "something content with\nenter and\nnew line",
+                                        text: "something content with\r\nenter and\r\nnew line",
                                         kind: "text",
                                     },
                                 ],

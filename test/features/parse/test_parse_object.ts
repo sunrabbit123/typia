@@ -1,8 +1,8 @@
 import TSON from "../../../src";
 import { primitive_equal_to } from "../../internal/primitive_equal_to";
 
-export function test_createObject_object(): void {
-    const obj = TSON.createObject({
+export function test_parse_object(): void {
+    const obj = TSON.parse({
         id: 1,
         account: "samchon",
         name: "Jeongho Nam",
@@ -14,5 +14,5 @@ export function test_createObject_object(): void {
     };
 
     if (primitive_equal_to(obj, expected) === false)
-        throw new Error("Bug on TSON.create(): failed to create exact object.");
+        throw new Error("Bug on TSON.parse(): failed to create exact object.");
 }

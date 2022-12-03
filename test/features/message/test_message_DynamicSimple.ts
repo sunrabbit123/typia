@@ -8,6 +8,6 @@ export const test_message_DynamicSimple = _test_message(
     `syntax = \"proto3\";
 
 message __Main {
-    map<string, number> value = 1;
+    map_lt_string_comma__space_number_gt_ value = 1;
 }`,
 );

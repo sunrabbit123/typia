@@ -10,6 +10,6 @@ export const test_message_DynamicTree = _test_message(
 message DynamicTree {
     string id = 1;
     double sequence = 2;
-    map<string, DynamicTree> children = 3;
+    map_lt_string_comma__space_DynamicTree_gt_ children = 3;
 }`,
 );

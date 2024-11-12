@@ -1,5 +1,7 @@
 import * as Namespace from "./functional/Namespace";
 
+import { ValidateMatchFunction } from "./typings/ValidateMatchFunction";
+
 import { AssertionGuard } from "./AssertionGuard";
 import { IRandomGenerator } from "./IRandomGenerator";
 import { IValidation } from "./IValidation";
@@ -1013,6 +1015,27 @@ const createRandomPure = /** @__PURE__ */ Object.assign<
 >(createRandom, randomPure);
 export { createRandomPure as createRandom };
 
+function match<
+  const T,
+  MatchFns extends ((arg: any) => any)[],
+  ReturnTypes extends MatchFns[number] extends (...args: any[]) => infer R
+    ? R
+    : never,
+>(
+  input: T,
+  ...fns: {
+    [K in keyof MatchFns]: ValidateMatchFunction<T, MatchFns[K]>;
+  }
+): ReturnTypes | undefined;
+
+/**
+ * @internal
+ */
+function match(): never {
+  halt("match");
+}
+
+export { match };
 /**
  * @internal
  */

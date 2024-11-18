@@ -21,6 +21,7 @@ import { CreateIsTransformer } from "./features/CreateIsTransformer";
 import { CreateRandomTransformer } from "./features/CreateRandomTransformer";
 import { CreateValidateTransformer } from "./features/CreateValidateTransformer";
 import { IsTransformer } from "./features/IsTransformer";
+import { MatchTransfomer } from "./features/MatchTransformer";
 import { RandomTransformer } from "./features/RandomTransformer";
 import { ValidateTransformer } from "./features/ValidateTransformer";
 import { CreateHttpAssertFormDataTransformer } from "./features/http/CreateHttpAssertFormDataTransformer";
@@ -182,6 +183,8 @@ const FUNCTORS: Record<string, Record<string, () => Task>> = {
 
     // RANDOM + INTERNAL
     random: () => RandomTransformer.transform,
+
+    match: () => MatchTransfomer.transform("match"),
     metadata: () => (project) => () =>
       ReflectMetadataTransformer.transform(project),
 
